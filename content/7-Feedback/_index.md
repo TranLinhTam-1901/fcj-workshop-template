@@ -6,11 +6,11 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-{{% notice warning %}}
+<!-- {{% notice warning %}}
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+{{% /notice %}} -->
 
-> Here, you can freely share your personal opinions about your experience participating in the First Cloud AI Journey program. This will help the FCAJ team improve any shortcomings based on the following aspects:
+<!-- > Here, you can freely share your personal opinions about your experience participating in the First Cloud AI Journey program. This will help the FCAJ team improve any shortcomings based on the following aspects: -->
 
 ### Overall Evaluation
 
@@ -30,18 +30,23 @@ During the internship, I learned many new skills such as using project managemen
 The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
 
 **6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
+The company does not have a policy to provide internship allowances but does offer flexible scheduling when necessary.. In addition, having the opportunity to join internal training sessions is a big plus.
 
 ---
 
 ### Additional Questions
-- What did you find **most satisfying** during your internship?  
+- What did you find **most satisfying** during your internship? 
+    * Being guided by mentors and shown what to do and what to improve. 
 - What do you think the company **should improve** for future interns?  
+    * Nothing
 - If recommending to a friend, would you **suggest they intern here**? Why or why not?  
+    * Yes, because the FCJ program here is very good and beneficial for the future.
 
 ---
 
 ### Suggestions & Expectations
 - Do you have any suggestions to improve the internship experience?  
+    * I hope AWS will allow more frequent access to the office.
 - Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+    * Yes, because AWS is a large company and offers many opportunities to participate in labor markets related to AWS
+<!-- - Any other comments (free sharing): -->

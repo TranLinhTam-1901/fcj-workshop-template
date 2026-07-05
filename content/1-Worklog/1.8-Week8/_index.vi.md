@@ -5,55 +5,33 @@ weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 8:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Phân tích chi tiết các yêu cầu hệ thống và xác định rõ ràng phạm vi sản phẩm khả dụng tối thiểu (MVP) đối với các cấu phần cá nhân phụ trách.
+- Thiết kế sơ đồ luồng người dùng (User Flow) chi tiết cho phân hệ Xác thực (Authentication) sử dụng Amazon Cognito.
+- Thiết kế sơ đồ luồng người dùng (User Flow) cho nghiệp vụ đăng ký vé sự kiện, bao gồm cả trường hợp xử lý danh sách chờ (Waiting List).
+- Phác thảo mô hình kiến trúc Serverless tổng thể để chuẩn bị cho giai đoạn triển khai hạ tầng ở tuần tiếp theo.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                                                                                                                                                                                                                      | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                          |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | --------------------------------------- |
+| 2   | - Phân tích các ca sử dụng (Use Cases) cho phân hệ Auth và Đăng ký vé <br> - Xác định các tiêu chí cốt lõi thuộc phạm vi MVP như: Đăng ký/Đăng nhập bằng Email, Login qua Google, Đăng ký vé sự kiện và xử lý Slot trống | 08/06/2026   | 08/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 3   | - Thiết kế sơ đồ User Flow cho luồng xác thực: Đăng ký tài khoản -> Nhập mã OTP/Verification Code gửi qua Email để kích hoạt tài khoản <br> - Xây dựng luồng đăng nhập trực tiếp qua Google OAuth và ánh xạ thông tin vào Cognito User Pool | 09/06/2026   | 09/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 4   | - Thiết kế sơ đồ User Flow cho luồng đăng ký vé sự kiện: Kiểm tra số lượng slot khả dụng -> Lưu thông tin đăng ký hợp lệ hoặc chuyển trạng thái sang Waiting List nếu hết slot | 10/06/2026   | 10/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 5   | - Mô hình hóa kiến trúc Serverless tổng thể cho phân hệ đảm nhiệm <br> - Xác định luồng tích hợp bảo mật: Sử dụng mã thông báo JWT từ Cognito làm Authorizer bảo vệ các endpoints đăng ký vé trên API Gateway | 11/06/2026   | 11/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 6   | - Tổ chức họp nhóm để rà soát, tối ưu hóa các sơ đồ luồng người dùng đã thiết kế <br> - Đối chiếu lại với các thành viên phụ trách Module khác nhằm đảm bảo tính đồng bộ dữ liệu và chốt tài liệu thiết kế tuần 8 | 12/06/2026   | 12/06/2026      | Họp nhóm kỹ thuật |
 
 ### Kết quả đạt được tuần 8:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Hoàn thành việc xác định phạm vi MVP một cách rõ ràng, giúp tối ưu hóa thời gian triển khai các tính năng cốt lõi cho dự án.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Xây dựng thành công sơ đồ luồng người dùng (User Flow) cho phân hệ Xác thực, bao gồm chi tiết luồng kiểm tra mã OTP qua Email và luồng liên kết tài khoản Google.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Hoàn thiện sơ đồ luồng nghiệp vụ đăng ký vé sự kiện, bao phủ toàn bộ các kịch bản từ đăng ký thành công cho đến việc tự động phân phối vào danh sách chờ (Waiting List).
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+- Thiết lập bản vẽ kiến trúc Serverless tổng thể, định hình rõ ràng phương án bảo mật API bằng giải pháp Cognito JWT Authorizer trước khi chuyển giao thông tin sang tầng xử lý Lambda và lưu trữ DynamoDB.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+- Đồng bộ hóa thiết kế cá nhân với cấu trúc tổng thể của cả nhóm, sẵn sàng về mặt tài liệu và tư duy logic để bắt đầu khởi tạo hạ tầng đám mây thực tế ở tuần sau.
 
 

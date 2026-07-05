@@ -5,53 +5,31 @@ weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
-
 ### Week 8 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Analyze system requirements in detail and clearly define the Minimum Viable Product (MVP) scope for the assigned individual components.
+- Design detailed User Flow diagrams for the Authentication subsystem using Amazon Cognito.
+- Design User Flow diagrams for the event ticket registration business logic, including handling scenarios for the Waiting List.
+- Sketch the overall Serverless architecture model to prepare for the infrastructure deployment phase in the following week.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to be deployed this week:
 
+| Day | Task | Start Date | Completion Date | Document Source |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | --------------------------------------- |
+| Mon | - Analyze Use Cases for the Auth and Ticket Registration subsystems <br> - Identify core criteria within the MVP scope such as: Email Sign-Up/Sign-In, Google Login, Ticket Registration, and Empty Slot handling | 08/06/2026   | 08/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Tue | - Design User Flows for the authentication process: Account Sign-Up -> Input OTP/Verification Code sent via Email to activate the account <br> - Construct the direct sign-in flow via Google OAuth and map information into the Cognito User Pool | 09/06/2026   | 09/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Wed | - Design User Flows for the ticket registration process: Check available slots -> Save valid registration information or change status to Waiting List if slots are full | 10/06/2026   | 10/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Thu | - Model the overall Serverless architecture for the assigned subsystem <br> - Define security integration flows: Utilize JWT tokens from Cognito as an Authorizer to protect ticket registration endpoints on API Gateway | 11/06/2026   | 11/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Fri | - Conduct team meetings to review and optimize the designed user flow diagrams <br> - Cross-check with members in charge of other modules to ensure data synchronization and freeze the Week 8 design documentation | 12/06/2026   | 12/06/2026      | Technical team meeting |
 
-### Week 8 Achievements:
+### Week 8 Results Achieved:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Completed MVP scope definition clearly, helping to optimize deployment timelines for core project features.
 
-* Successfully created and configured an AWS Free Tier account.
+- Successfully built User Flow diagrams for the Authentication subsystem, covering detailed email OTP verification flows and Google account linking workflows.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+- Finalized business user flows for event ticket registration, covering all scenarios from successful registration to automatic assignment into the Waiting List.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+- Established the overall Serverless architecture blueprint, clearly defining the API security method using the Cognito JWT Authorizer solution before handing off data to the Lambda processing layer and DynamoDB storage.
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Synchronized individual designs with the group's overall structure, ensuring readiness in documentation and logical thinking to initiate actual cloud infrastructure setup next week.

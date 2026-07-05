@@ -5,53 +5,35 @@ weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
-
 ### Week 10 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Deploy and configure Amazon Cognito User Pool as a centralized identity management and authentication system.
+- Establish an email self-sign-up workflow verified through verification codes (OTP).
+- Integrate and configure Endpoints security mechanisms using JSON Web Token (JWT) verification tokens via CognitoAuthorizer in the Globals block.
+- Audit Endpoints belonging to UserProfileFunction (/profile/init, /profile/me, /profile/avatar-upload-url) to ensure mandatory default JWT authentication requirements from the system.
+- Attend the company event on June 27, 2026.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to be deployed this week:
 
+| Day | Task | Start Date | Completion Date | Document Source |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | --------------------------------------- |
+| Mon | - Declare AWS::Cognito::UserPool and UserPoolClient resources in the AWS SAM configuration file <br> - Set CognitoUserPoolIdParam parameters and link the ARN directly to the Globals block to create a centralized security gateway | 22/06/2026   | 22/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Tue | - Configure Auto-Verify Email workflows in Cognito to enable automatic verification code delivery services <br> - Write sample code or test the sign-up interface to ensure the system accurately delivers OTP codes to user mailboxes | 23/06/2026   | 23/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Wed | - Configure Amazon API Gateway as the backend connection gateway <br> - Apply global CognitoUserPoolAuthorizer configurations over Profile subsystem paths, making JWT token decryption and validation mandatory | 24/06/2026   | 24/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Thu | - Construct test scenarios simulating the flow: Registration -> Receive Verification Code via Email -> Confirm Account -> Successful Login and receive JWT tokens from Cognito | 25/06/2026   | 25/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Fri | - Proceed with resource updates using the sam deploy command <br> - Review system logs, audit Cognito Authorizer permissions on API Gateway for Profile endpoints, and freeze Week 10 work outcomes | 26/06/2026   | 26/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Sat | - Attend the company Event <br> - Listen to insights from speakers and company members <br> - Learn about Cloud learning methodologies, technical mindset, and AWS research roadmaps <br> - Take notes and consolidate content learned from the Event | 27/06/2026   | 27/06/2026      | Company event |
 
-### Week 10 Achievements:
+### Week 10 Results Achieved:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Initialized and fully configured Amazon Cognito User Pool, providing a robust foundation for application user account management.
 
-* Successfully created and configured an AWS Free Tier account.
+- Successfully deployed the automated email verification registration flow, with the system providing stable OTP delivery and correct account activation state handling.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+- Successfully configured the API Gateway Cognito Authorizer at a global scope (Globals), ensuring profile management endpoints (/profile/) are rigorously protected by JWT security token decryption mechanisms.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+- Successfully tested account creation and Token retrieval from the client side, building a solid identity security foundation for the Ticket Registration and Personal Profile subsystems in the upcoming week.
 
-* Used AWS CLI to perform basic operations such as:
+- Participated in the "FCAJ COMMUNITY DAY" event at the company on June 27, 2026.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Acquired additional practical experience from speakers and company members regarding Cloud learning methods, technical mindset, and AWS learning direction.

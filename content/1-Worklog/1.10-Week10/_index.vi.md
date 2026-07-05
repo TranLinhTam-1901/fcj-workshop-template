@@ -5,55 +5,38 @@ weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 10:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Triển khai và cấu hình Amazon Cognito User Pool làm hệ thống quản lý định danh và xác thực tập trung.
+- Thiết lập luồng đăng ký tài khoản tự phục vụ (Self-Sign-Up) bằng Email có xác thực thông qua mã Verification Code (OTP).
+- Tích hợp và cấu hình cơ chế bảo mật Endpoints sử dụng mã xác thực dạng JSON Web Token (JWT) thông qua CognitoAuthorizer tại khối Globals.
+- Rà soát các Endpoint thuộc UserProfileFunction (/profile/init, /profile/me, /profile/avatar-upload-url) để đảm bảo yêu cầu xác thực JWT mặc định bắt buộc từ hệ thống.
+- Tham gia Event tại công ty vào 27/06/2026.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | --------------------------------------- |
+| 2   | - Khai báo tài nguyên AWS::Cognito::UserPool và UserPoolClient trong tệp cấu hình AWS SAM <br> - Thiết lập thuộc tính tham số CognitoUserPoolIdParam và liên kết trực tiếp ARN vào khối Globals để tạo cổng bảo mật tập trung | 22/06/2026   | 22/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 3   | - Cấu hình luồng Auto-Verify Email trong Cognito để kích hoạt dịch vụ tự động gửi mã xác thực (Verification Code) <br> - Viết mã mẫu hoặc kiểm thử giao diện đăng ký để đảm bảo hệ thống gửi mã OTP về hòm thư người dùng chính xác | 23/06/2026   | 23/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 4   | - Cấu hình Amazon API Gateway làm cổng kết nối cho các dịch vụ Backend <br> - Áp dụng CognitoUserPoolAuthorizer toàn cục lên các tuyến đường của phân hệ Profile, bắt buộc phải giải mã và kiểm tra tính hợp lệ của JWT Token | 24/06/2026   | 24/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 5   | - Thực hiện xây dựng các kịch bản kiểm thử giả lập luồng Đăng ký -> Nhận mã Verification Code qua Email -> Xác nhận tài khoản -> Đăng nhập thành công và nhận mã JWT từ Cognito | 25/06/2026   | 25/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 6   | - Tiến hành triển khai bản cập nhật tài nguyên bằng lệnh sam deploy <br> - Rà soát log hệ thống, kiểm tra quyền hạn của Cognito Authorizer trên API Gateway đối với các Endpoint của Profile và chốt kết quả công việc tuần 10 | 26/06/2026   | 26/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 7   | - Tham gia buổi Event tại công ty <br> - Lắng nghe chia sẻ từ diễn giả và các thành viên công ty <br> - Tìm hiểu cách học Cloud, tư duy kỹ thuật và định hướng nghiên cứu AWS <br> - Ghi chú và tổng hợp nội dung học được từ Event | 27/06/2026   | 27/06/2026      | Company event |
 
 ### Kết quả đạt được tuần 10:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Khởi tạo và cấu hình hoàn chỉnh Amazon Cognito User Pool, làm nền tảng vững chắc cho việc quản lý tài khoản người dùng của ứng dụng.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Triển khai thành công luồng đăng ký tài khoản tự động xác thực bằng Email, hệ thống gửi mã OTP ổn định và xử lý kích hoạt trạng thái tài khoản chính xác.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Cấu hình thành công API Gateway Cognito Authorizer ở phạm vi toàn cục (Globals), đảm bảo các endpoint quản lý hồ sơ cá nhân (/profile/) được bảo vệ nghiêm ngặt bằng cơ chế giải mã mã bảo mật JWT.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+- Kiểm thử thành công luồng tạo tài khoản và lấy Token từ phía Client, làm cơ sở bảo mật thông tin định danh cho phân hệ Đăng ký vé và Hồ sơ cá nhân ở tuần kế tiếp.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- Tham gia Event "FCAJ COMMUNITY DAY" tại công ty vào ngày 27/06/2026.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+- Tiếp thu thêm kinh nghiệm thực tế từ diễn giả và các thành viên công ty về phương pháp học Cloud, tư duy kỹ thuật và định hướng học AWS.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
 
 

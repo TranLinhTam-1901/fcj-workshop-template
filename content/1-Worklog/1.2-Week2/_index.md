@@ -5,53 +5,53 @@ weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
-
 ### Week 2 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Understand account management and basic access control on AWS.
+- Learn how to create and manage IAM users, IAM groups, and permissions.
+- Understand how to create an AWS Support case when encountering technical errors or account-related issues.
+- Know how to configure AWS Budgets to monitor service usage and control costs.
+- Grasp the basic concepts of Amazon VPC and VPN connections.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to be deployed this week:
 
+| Day | Task | Start Date | Completion Date | Document Source |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | --------------- | --------------------------------------- |
+| Mon | - Review basic AWS account setup from Week 1 <br> - Learn about AWS Identity and Access Management (IAM) <br> - Differentiate between root account, IAM user, IAM group, and IAM policy | 27/04/2026   | 27/04/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Tue | - Learn how to create an admin user and an admin group <br> - Learn how to assign permissions to IAM users and IAM groups <br> - **Practice:** <br>  + Create an IAM admin group <br>  + Create an IAM admin user <br>  + Assign administrator permissions to the group | 28/04/2026   | 28/04/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Wed | - Learn about AWS Support and AWS Support plans <br> - Learn when to create a support case <br> - **Practice:** <br>  + Access the AWS Support Center <br>  + Learn the basic process of creating a support case | 29/04/2026   | 29/04/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Thu | - Learn about AWS Budgets and cost control methods <br> - Learn how to monitor AWS Free Tier usage <br> - **Practice:** <br>  + Create a monthly cost budget <br>  + Configure budget alerts <br>  + Check the billing dashboard | 30/04/2026   | 30/04/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Fri | - Learn the basic concepts of Amazon VPC: <br>  + VPC <br>  + Subnet <br>  + Route Table <br>  + Internet Gateway <br>  + Security Group <br> - Learn the basic concept of VPN on AWS <br> - Note down common use cases for VPC and VPN | 01/05/2026   | 01/05/2026      | https://cloudjourney.awsstudygroup.com/ |
 
-### Week 2 Achievements:
+### Week 2 Results Achieved:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Understood the role of AWS Identity and Access Management (IAM) in controlling access to AWS resources.
 
-* Successfully created and configured an AWS Free Tier account.
+- Differentiated between core components in IAM:
+  - Root account
+  - IAM user
+  - IAM group
+  - IAM policy
+  - Permission
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+- Practiced creating an IAM admin group and an IAM admin user.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+- Understood how to assign permissions to users through IAM groups and IAM policies.
 
-* Used AWS CLI to perform basic operations such as:
+- Became familiar with the AWS Support Center and mastered the process of creating a support case when encountering account or technical issues.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+- Understood how AWS Budgets helps monitor costs and control service usage during lab practices.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Created a basic budget and configured budget alerts to prevent unexpected charges.
+
+- Mastered the basic concepts of Amazon VPC:
+  - VPC
+  - Subnet
+  - Route Table
+  - Internet Gateway
+  - Security Group
+  - Network ACL
+
+- Understood the fundamental role of VPNs in establishing secure connections between private networks.
+
+- Completed basic labs related to IAM, AWS Support, and AWS Budgets, and initiated familiarity with VPC/VPN.

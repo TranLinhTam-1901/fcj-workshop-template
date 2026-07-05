@@ -5,53 +5,31 @@ weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
-
 ### Week 11 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Extend Amazon Cognito authentication functionalities, integrating solutions to log in via Google (Google Login OAuth).
+- Develop .NET 8 source code for UserProfileLambda, responsible for handling business logic APIs to get personal information and update profiles (GET/PUT /profile/me).
+- Build a time-limited upload URL issuance API (S3 Presigned URL) at the /profile/avatar-upload-url endpoint to manage avatar uploads to S3 from Clients.
+- Develop an AWS Lambda Function (TicketLambda) on .NET 8, responsible for processing event ticket registration business logic, validating empty slots, and putting users into the Waiting List.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to be deployed this week:
 
+| Day | Task | Start Date | Completion Date | Document Source |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | --------------------------------------- |
+| Mon | - Configure Google Cloud Console to acquire Client ID and Client Secret for the Web application <br> - Declare Identity Provider (Google) inside the Amazon Cognito User Pool configurations using the SAM Template file | 29/06/2026   | 29/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Tue | - Set up Attribute Mapping between Google accounts and the Cognito User Pool <br> - Write code to read identity contexts (Cognito Claims) and implement user data synchronization logic into the EventManagementUsers table | 30/06/2026   | 30/06/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Wed | - Write integration source code utilizing AWS SDK for .NET at the /profile/avatar-upload-url endpoint to generate S3 Presigned URLs with fixed expiration times, allowing clients to upload avatar image files directly to S3 | 01/07/2026   | 01/07/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Thu | - Write .NET 8 source code for TicketLambda to fetch current total ticket counts of an event from DynamoDB to calculate empty slots <br> - Implement workflow routing logic: Record CONFIRMED status into TicketTable or push to RegistrationTable as WAITING_LIST | 02/07/2026   | 02/07/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Fri | - Run sam deploy to deliver all processing source codes and Google integration configurations to the cloud <br> - Use Postman to send test data to verify the accuracy of Presigned URL generation, profile updates, and ticket registration logic functions | 03/07/2026   | 03/07/2026      | https://cloudjourney.awsstudygroup.com/ |
 
-### Week 11 Achievements:
+### Week 11 Results Achieved:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Successfully extended system authentication mechanisms, allowing users to log in flexibly using Google accounts through the OAuth2 protocol.
 
-* Successfully created and configured an AWS Free Tier account.
+- Completed .NET 8 source code development for UserProfileLambda, smoothly processing personal profile synchronization with DynamoDB and successfully establishing Presigned URL generation mechanisms for uploading photos directly to Amazon S3.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+- Completed AWS Lambda Function development responsible for the event ticket registration pipeline, connecting securely with the DynamoDB database.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+- Built accurate real-time empty slot validation algorithms, synchronously managing user placement into formal entry lists or waiting lists (Waiting List) based on event capacity.
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Successfully packaged and deployed subsystem source codes onto the AWS cloud environment using the AWS SAM tool, ready for comprehensive integration testing.

@@ -5,55 +5,55 @@ weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 3:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Ôn lại các kiến thức cơ bản về quản lý tài khoản AWS, IAM, AWS Budgets và VPC đã học ở các tuần trước.
+- Tiếp tục tìm hiểu các kiến thức nền tảng về mạng trên AWS.
+- Hiểu các phương pháp học tập và learning frameworks trong môi trường Cloud.
+- Ghi chú các kinh nghiệm thực tế và áp dụng vào kế hoạch học tập trong quá trình thực tập.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+
+| Thứ | Công việc                                                                                                                                                                                                                                                       | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                          |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | --------------------------------------- |
+| 2   | - Ôn lại kiến thức về IAM, AWS Budgets, AWS Support và VPC cơ bản ở tuần 2 <br> - Ghi chú lại các nội dung chưa rõ để tiếp tục tìm hiểu                                                                                                                         | 04/05/2026   | 04/05/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 3   | - Tiếp tục tìm hiểu kiến thức nền tảng về networking trên AWS <br> - Ôn lại các thành phần cơ bản của VPC: <br>  + VPC <br>  + Subnet <br>  + Route Table <br>  + Internet Gateway <br>  + Security Group                                                       | 05/05/2026   | 05/05/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 4   | - Tìm hiểu phương pháp học Cloud và kỹ năng đọc tài liệu kỹ thuật <br> - Thực hành đọc tài liệu AWS và xác định các phần quan trọng như mục tiêu lab, điều kiện chuẩn bị, kiến trúc và bước dọn dẹp tài nguyên                                                  | 06/05/2026   | 06/05/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 5   | - Tìm hiểu các learning frameworks thường dùng khi học kiến trúc Cloud <br> - Tìm hiểu cách tiếp cận một bài lab AWS theo trình tự: <br>  + Đọc mục tiêu <br>  + Chuẩn bị tài nguyên <br>  + Thực hành <br>  + Xử lý lỗi <br>  + Dọn dẹp tài nguyên             | 07/05/2026   | 07/05/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 6   | - Chuẩn bị ghi chú và câu hỏi cho buổi event tại công ty <br> - Tổng hợp lại các bài lab AWS đã học <br> - Hoàn thiện nội dung worklog trong tuần                                                                                                               | 08/05/2026   | 08/05/2026      | https://cloudjourney.awsstudygroup.com/ |
 
 
 ### Kết quả đạt được tuần 3:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Đã ôn lại các kiến thức chính của tuần 2, bao gồm IAM, AWS Budgets, AWS Support và VPC cơ bản.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Củng cố kiến thức về các thành phần networking cơ bản trên AWS:
+  - VPC
+  - Subnet
+  - Route Table
+  - Internet Gateway
+  - Security Group
+  - Network ACL
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Biết cách đọc tài liệu AWS hiệu quả hơn thông qua việc tập trung vào:
+  - Mục tiêu bài lab
+  - Điều kiện chuẩn bị
+  - Các bước triển khai
+  - Sơ đồ kiến trúc
+  - Ghi chú xử lý lỗi
+  - Hướng dẫn dọn dẹp tài nguyên
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+- Hiểu được tầm quan trọng của việc học Cloud theo một framework rõ ràng và có hệ thống.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- Biết cách tiếp cận một bài thực hành AWS theo trình tự:
+  - Hiểu mục tiêu
+  - Chuẩn bị tài nguyên cần thiết
+  - Thực hiện các bước cấu hình
+  - Xác định và xử lý lỗi phát sinh
+  - Ghi nhận kết quả
+  - Dọn dẹp tài nguyên không sử dụng
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+
 
 

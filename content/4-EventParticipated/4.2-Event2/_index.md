@@ -1,126 +1,113 @@
 ---
 title: "Event 2"
-date: 2024-01-01
-weight: 1
+date: 2026-06-27
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+<!-- {{% notice warning %}}
+⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
+{{% /notice %}} -->
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Report on “FCAJ COMMUNITY DAY”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Share best practices and trend updates in integrating Artificial Intelligence (AI) into real-world business scenarios.
+- Introduce AI platforms and AI Agents that support cloud operations automation, cost optimization, and enterprise security enhancement.
+- Share practical experiences and technical solutions to boost efficiency across specialized domains including HR, DevOps, and Voice AI technology.
+- Provide a networking space for experts, engineers, and the tech community to discuss career paths in the AI era.
 
-### Speakers
+### Speakers List
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Truong Tran** – AI Solution Sales, Noventiq
+- **Steve Tran** – CTO/Founder, CloudThinker
+- **Trung Vu** – CEO, Revve AI
+- **Anh Dang** – Solution Sales, Noventiq
+- **Nghi Danh** – AI Engineer, Renova Cloud
+- **Kiet Tran** – AI Engineer, AWS Student Builder Group
+- **Bao Phan** – Cloud Engineer, Cloud Kinetics
+- **Nguyen Nguyen** – Cloud Engineer, Cloud Kinetics
+- **Toan Nguyen** – AWS Security Builder
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### 1. Career Roadmap & AI Operations System (Aigentic Platform)
+- **Fierce Job Market:** Companies increasingly prioritize hiring Seniors who are proficient in AI tools or capable of multiplying their delivery speed using AI.
+- **Aigentic Platform:** A breakthrough Cloud Operations solution focusing on solving three major production issues:
+  - Automated Incident Management (resolving issues within minutes).
+  - Automated Code Reviews to enforce source code quality control.
+  - FinOps to optimize cloud infrastructure costs with nearly 100% AI automation.
+- **Multi-agent Architecture Thinking:** Utilizing a multi-agent design to optimize the context window and strictly manage Role-Based Access Control (RBAC).
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+#### 2. Voice AI for Vietnamese Language
+- **Localization Challenges:** Vietnamese is classified as a low-resource language, posing significant bottlenecks in training robust AI models.
+- **End-to-End System Architecture:** Implementing a seamless pipeline: STT (Speech-to-Text) $\rightarrow$ LLM $\rightarrow$ TTS (Text-to-Speech) integrated with Tool Calling features to handle complex business logic (e.g., automated bank card freezing).
+- **Real-world Context Handling:** Optimizing AI for gender detection to use appropriate pronouns, and context awareness to determine when to interrupt or wait while the customer is thinking.
 
-#### Transitioning to modern application architecture – Microservices
+#### 3. DevOps AI Agents
+- **Core Problem:** DevOps engineers currently waste hours troubleshooting due to fragmented log/trace data and a lack of holistic context.
+- **4-Step Automation Workflow:** The DevOps Agent standardizes operations via: Log Classification & Extraction -> Root Cause Analysis (RCA) -> Mitigation Suggestion -> System Improvement Recommendation.
+- **Live Demonstration:** Simulating a DDoS attack scenario where the AI Agent automatically analyzes and outputs explicit remediation steps, reducing incident response time from hours to tens of minutes.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+#### 4. AI in Human Resource Management (HR Modernization)
+- **Traditional HR Bottlenecks:** Manual CV screening easily overlooks high-potential candidates and lacks a standardized data framework for objective capability assessment.
+- **Amazon Q Solution:** Deploying AI to automatically parse, analyze, and match CV profiles against Job Descriptions (JDs). The system auto-classifies match levels (Strong/Good/Low) and benchmarks salary offers based on corporate budgets.
+- **Workflow Automation:** Seamless integration with communication and storage systems (Gmail, Google Drive, Microsoft OneDrive) to auto-schedule interviews and send feedback notifications.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
-
-#### Domain-Driven Design (DDD)
-
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
-
-#### Event-Driven Architecture
-
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+#### 5. Private Security for Enterprise AI (Amazon Q implementation)
+- **Data Privacy Concerns:** Enterprises hesitate to connect proprietary data with AI due to data leakage risks over public internet lines.
+- **Secure Architecture Solution:** Establishing absolute private data transit by combining VPC Connections and MCP (Model Context Protocol) Servers. All data flows through interface endpoints, secured by TLS encryption, completely hiding the infrastructure from the public internet.
+- **Cost-Benefit Analysis:** Evaluating overhead costs generated by advanced security components including Route 53 Resolvers, Application Load Balancers (ALB), and Data Transfer fees.
 
 ### Key Takeaways
 
-#### Design Mindset
+#### Engineering & Design Thinking
+- **Multi-agent Mindset:** Understanding how to orchestrate specialized AI agents to solve intricate problems rather than relying on a single monolithic model.
+- **Mastering System Observability:** AI will not replace engineers. To master AI integration, core engineers must possess deep knowledge of base systems and observability frameworks.
+- **Empathetic AI UX:** When designing Voice AI systems, localized context, speech nuances, and user psychology must be heavily factored into the model.
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+#### Technical Architecture & Operations
+- Deep dive into automating cloud incident resolution and automated incident response workflows through AI agents.
+- Mastery of enterprise data isolation strategies using VPCs, MCP servers, and TLS encryption when interfacing with managed AI services like Amazon Q.
+- Understanding the architectural pipeline of combining speech processing technologies (STT, TTS) with LLMs to build intelligent virtual assistants.
 
-#### Technical Architecture
+#### Modernization Strategies
+- Leveraging domain-specific AI assistants (such as Amazon Q) to automate administrative overhead and HR profiling pipelines.
+- Shifting from manual DevOps triage to AI-driven automated Root Cause Analysis to minimize system downtime.
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+### Actionable Items
 
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
-
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- **Boost Personal Productivity:** Integrate AI assistants into daily coding workflows, leveraging AI for automated code reviews to ensure higher code quality.
+- **R&D Multi-agent Architecture:** Experiment with multi-agent frameworks in personal/team projects to optimize context windows and system access control.
+- **Implement Data Security Practices:** Research and adopt secure network designs (VPCs, Interface Endpoints) when connecting with third-party APIs to protect data privacy.
+- **Digitize Operational Workflows:** Pilot automated pipelines to parse and extract data from unstructured documents, CVs, and forms based on Amazon Q's integration philosophy.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Attending the **“FCAJ Community Day - June 2026”** workshop was an invaluable technical experience that broadened my perspective on full-scale digital transformation powered by Generative AI.
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### Learning from Industry Experts
+- I gained first-hand, practical insights from Founders, CEOs, CTOs, and Solution Specialists/Architects from top-tier cloud organizations like AWS, CloudThinker, Noventiq, Renova Cloud, and Cloud Kinetics.
+- Real-world perspectives on the tightening tech job market provided me with strong motivation and clear learning directives.
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+#### Hands-on Technical Insights
+- Witnessed highly compelling live demos, particularly the DevOps Agent scenario which automatically isolated and mitigated a DDoS attack, conducting Root Cause Analysis within minutes.
+- Formed a clear architectural understanding of private network setups that secure enterprise data with TLS encryption, completely masking backend infrastructure from the internet.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### Adopting Cutting-Edge Tools
+- Gained direct exposure to pioneering concepts: Aigentic Platform, Amazon Q Developer, MCP Server, and integrated Vietnamese Voice AI pipelines.
+- Clearly realized how AI penetrates non-tech fields to effectively automate candidate screening and HR matching matrices.
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+#### Networking & Discussion
+- The event provided an excellent networking platform, allowing engineers and tech students to engage directly with industry veterans to solve cloud cost optimization (FinOps) equations and map out career growth paths.
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+#### Key Lessons Learned
+- AI will not replace developers, but it is a powerful skill-multiplier. Next-gen developers must master AI to optimize their delivery velocity.
+- Every enterprise AI integration must strike a calculated balance between data security and infrastructure cost management.
 
-#### Some event photos
-*Add your event photos here*  
+<!-- #### Event Media
+* [Insert check-in photos and key presentation slides from FCAJ Community Day here] -->
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+> Overall, the event catalyzed a major shift in my system design paradigm. It perfectly embodied the event theme: When data is driven correctly, AI will rise powerfully to reshape the future of technology (**"DATA DRIVEN, AI RISEN"**).

@@ -5,54 +5,33 @@ weight: 2
 chapter: false
 pre: " <b> 1.12 </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 ### Mục tiêu tuần 12:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Tích hợp liên thông các phân hệ cá nhân đảm nhiệm bao gồm luồng Xác thực (Cognito), Quản lý hồ sơ cá nhân kèm tải ảnh đại diện (Profile/S3) và Đăng ký vé (Lambda/DynamoDB) theo mô hình End-to-End.
+- Tiến hành kiểm thử liên thông (Integration Testing) toàn hệ thống để phát hiện và xử lý các lỗi phát sinh.
+- Thực hiện rà soát, tối ưu hóa chi phí vận hành các tài nguyên Serverless đã cấu hình (AWS Budgets, DynamoDB Capacity, Lambda Timeout).
+- Hoàn thiện tài liệu kỹ thuật (Workshop Report), đóng gói mã nguồn hạ tầng và chuẩn bị bàn giao dự án.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | --------------------------------------- |
+| 2   | - Thực hiện cấu hình đồng bộ End-to-End: Gắn mã xác thực JWT nhận được sau khi Login vào Header của yêu cầu <br> - Thực hiện kịch bản liên thông đầy đủ: Đăng nhập -> Lấy Presigned URL -> Upload ảnh lên S3 -> Cập nhật Profile -> Gửi API đăng ký vé sự kiện | 06/07/2026   | 06/07/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 3   | - Tiến hành viết kịch bản và thực hiện kiểm thử liên thông hệ thống với nhiều trường hợp dữ liệu khác nhau để kiểm tra độ ổn định của API Gateway Authorizer, hàm Lambda xử lý danh sách chờ và phân hệ quản lý hồ sơ cá nhân | 07/07/2026   | 07/07/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 4   | - Rà soát cấu hình tài nguyên đám mây để tối ưu hóa chi phí: Chuyển đổi DynamoDB sang dạng On-demand, điều chỉnh dung lượng bộ nhớ phù hợp cho Lambda và cấu hình thời gian lưu trữ log hợp lý trên CloudWatch | 08/07/2026   | 08/07/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 5   | - Tổng hợp và hoàn thiện cuốn tài liệu kỹ thuật cuối kỳ (Workshop Report) chi tiết về kiến trúc hệ thống xác thực, module hồ sơ cá nhân S3 và module đăng ký vé sự kiện <br> - Đóng gói mã nguồn hạ tầng SAM Template lên kho lưu trữ chung của nhóm | 09/07/2026   | 09/07/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 6   | - Thực hiện rà soát tổng thể toàn bộ tài nguyên trên tài khoản AWS <br> - Tiến hành bàn giao mã nguồn, tài liệu dự án cho người hướng dẫn thực tập tại doanh nghiệp và chính thức khép lại kỳ thực tập | 10/07/2026   | 10/07/2026      | https://cloudjourney.awsstudygroup.com/ |
 
 ### Kết quả đạt được tuần 12:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Tích hợp thành công luồng nghiệp vụ trọn vẹn (End-to-End): Người dùng đăng nhập qua Email/Google, nhận JWT Token bảo mật để cập nhật thông tin hồ sơ cá nhân, upload ảnh avatar lên S3 và thực hiện đăng ký vé sự kiện một cách an toàn.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Hoàn thành quá trình kiểm thử liên thông toàn hệ thống, xử lý triệt để các lỗi phân quyền truy cập tại API Gateway Authorizer, bảo đảm logic cập nhật thông tin cá nhân và nghiệp vụ vận hành mượt mà.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Tối ưu hóa thành công hiệu năng ứng dụng Serverless dựa trên môi trường .NET 8 và cấu trúc chi phí vận hành đám mây dựa trên các best practices của AWS.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+- Hoàn thiện đầy đủ bộ tài liệu kỹ thuật bàn giao (Workshop Report), đóng gói mã nguồn hạ tầng dạng mã (IaC) rõ ràng, khoa học.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+- Đạt được toàn bộ các mục tiêu đặt ra ban đầu của kỳ thực tập, hoàn thành tốt nhiệm vụ phát triển cấu phần phân công trong dự án và thực hiện bàn giao sản phẩm đúng thời hạn.
 
 

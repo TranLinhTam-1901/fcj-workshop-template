@@ -5,55 +5,58 @@ weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
+<!-- {{% notice warning %}}
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
-
+ -->
 
 ### Mục tiêu tuần 5:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Ôn lại kiến thức về Amazon EC2, EBS, Security Group và networking cơ bản.
+- Thực hành xây dựng và kết nối đến máy chủ EC2.
+- Hiểu quy trình cơ bản khi thiết lập kết nối VPN.
+- Làm việc trực tiếp tại văn phòng công ty và tham gia thảo luận nhóm.
+- Cải thiện kỹ năng xử lý lỗi khi cấu hình EC2 và mạng.
+- Tham gia Event tại công ty vào ngày 23/05/2026.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
-
+| Thứ | Công việc                                                                                                                                                                                                                                                                 | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                          |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | --------------------------------------- |
+| 2   | - Ôn lại kiến thức về Amazon EC2 ở tuần 4 <br> - Ôn lại các thành phần chính: <br>  + EC2 instance <br>  + AMI <br>  + Key pair <br>  + Security Group <br>  + EBS volume                                                                                                 | 18/05/2026   | 18/05/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 3   | - Tìm hiểu cách khởi tạo EC2 instance <br> - Tìm hiểu cách cấu hình inbound rules trong Security Group <br> - Chuẩn bị ghi chú cho phần thực hành EC2                                                                                                                     | 19/05/2026   | 19/05/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 4   | - Làm việc nhóm để thực hành xây dựng máy chủ EC2 <br> - Cấu hình key pair và Security Group <br> - Kết nối đến EC2 instance bằng SSH <br> - Trao đổi lỗi và hướng xử lý với các thành viên trong nhóm | 20/05/2026   | 20/05/2026      | https://cloudjourney.awsstudygroup.com/                          |
+| 5   | - Tiếp tục thực hành cấu hình EC2 <br> - Tìm hiểu các bước xử lý lỗi cơ bản khi không thể SSH vào EC2 <br> - Kiểm tra các lỗi thường gặp liên quan đến key pair, Security Group, public IP và cấu hình mạng                                                               | 21/05/2026   | 21/05/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 6   | - Tìm hiểu và thực hành khái niệm kết nối VPN cơ bản <br> - Ôn lại mối liên hệ giữa VPC, subnet, route table và VPN connection <br> - Tổng hợp kết quả thực hành EC2 và VPN                                                                                               | 22/05/2026   | 22/05/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 7   | - Tham gia buổi Event tại công ty <br> - Lắng nghe chia sẻ từ diễn giả và các thành viên công ty <br> - Tìm hiểu cách học Cloud, tư duy kỹ thuật và định hướng nghiên cứu AWS <br> - Ghi chú và tổng hợp nội dung học được từ Event  |23/05/2026   | 23/05/2026      | Company event    
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Ôn tập và củng cố kiến thức về Amazon EC2 cùng các thành phần chính:
+  - EC2 instance
+  - AMI
+  - Instance type
+  - Key pair
+  - Security Group
+  - EBS volume
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Đã thực hành khởi tạo và cấu hình EC2 instance.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Hiểu cách inbound rules trong Security Group ảnh hưởng đến khả năng kết nối vào EC2 instance.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+- Đã làm việc trực tiếp tại văn phòng công ty vào ngày 20/05/2026 từ 08:30 đến 16:30.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- Tham gia thảo luận nhóm và thực hành liên quan đến việc xây dựng máy chủ EC2, thiết lập kết nối VPN.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+- Biết một số bước xử lý lỗi thường gặp khi không kết nối được EC2, bao gồm:
+  - Kiểm tra key pair
+  - Kiểm tra public IP address
+  - Kiểm tra inbound rules của Security Group
+  - Kiểm tra network và route configuration
+  - Kiểm tra trạng thái instance
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+- Hiểu mục đích cơ bản của VPN trong việc kết nối bảo mật giữa các hệ thống mạng riêng.
 
+- Có thêm kinh nghiệm thực tế khi làm việc với tài nguyên AWS và xử lý lỗi cấu hình trong quá trình thực hành lab.
+- Đã tham gia Event "AWS FIRST CLOUD AI JOURNEY - COMMUNITY DAY" tại công ty vào ngày 23/05/2026.
 
+- Tiếp thu thêm kinh nghiệm thực tế từ diễn giả và các thành viên công ty về phương pháp học Cloud, tư duy kỹ thuật và định hướng học AWS.

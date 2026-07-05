@@ -5,55 +5,57 @@ weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 4:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Hiểu các khái niệm cơ bản về dịch vụ tính toán và lưu trữ trên AWS.
+- Tìm hiểu các thành phần chính của Amazon EC2 như instance type, AMI, key pair, security group và EBS volume.
+- Tìm hiểu các dịch vụ lưu trữ như Amazon EFS và Amazon FSx.
+- Nắm được mục đích cơ bản của AWS Application Migration Service (AWS MGN).
+- Hiểu cách EC2 Auto Scaling hỗ trợ mở rộng hệ thống và tăng tính sẵn sàng.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                                                                                                                                                                                     | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                          |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | --------------------------------------- |
+| 2   | - Tìm hiểu Amazon EC2 cơ bản <br>  + EC2 instance <br>  + AMI <br>  + Instance type <br>  + Key pair <br>  + Security Group <br> - Hiểu các trường hợp sử dụng EC2 để chạy máy chủ ảo trên AWS                                | 11/05/2026   | 11/05/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 3   | - Tìm hiểu các lựa chọn lưu trữ cho EC2 <br>  + Amazon EBS <br>  + Các loại EBS volume <br>  + Snapshot <br> - Tìm hiểu cách EBS được gắn vào EC2 instance <br> - Ghi chú mối quan hệ giữa EC2 và EBS                         | 12/05/2026   | 12/05/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 4   | - Tìm hiểu các dịch vụ lưu trữ chia sẻ trên AWS <br>  + Amazon EFS <br>  + Amazon FSx <br> - So sánh trường hợp sử dụng cơ bản giữa EBS, EFS và FSx <br> - Hiểu khi nào cần sử dụng shared file storage trong kiến trúc Cloud | 13/05/2026   | 13/05/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 5   | - Tìm hiểu AWS Application Migration Service (AWS MGN) <br> - Hiểu ý tưởng cơ bản của việc di chuyển máy chủ và workload lên AWS <br> - Ghi chú các khái niệm migration như source server, replication, cutover và testing    | 14/05/2026   | 14/05/2026      | https://cloudjourney.awsstudygroup.com/ |
+| 6   | - Tìm hiểu EC2 Auto Scaling <br>  + Launch Template <br>  + Auto Scaling Group <br>  + Scaling policy <br> - Hiểu cách Auto Scaling hỗ trợ high availability và cost optimization <br> - Tổng hợp nội dung đã học trong tuần  | 15/05/2026   | 15/05/2026      | https://cloudjourney.awsstudygroup.com/ |
 
 ### Kết quả đạt được tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Hiểu được vai trò cơ bản của Amazon EC2 là dịch vụ tính toán dùng để chạy máy chủ ảo trên AWS.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Nắm được các thành phần chính của EC2:
+  - EC2 instance
+  - Amazon Machine Image (AMI)
+  - Instance type
+  - Key pair
+  - Security Group
+  - Elastic Block Store (EBS)
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Hiểu cách Amazon EBS cung cấp block storage cho EC2 instance và cách snapshot được sử dụng cho mục đích sao lưu.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+- Phân biệt được cơ bản các dịch vụ lưu trữ trên AWS:
+  - Amazon EBS cho block storage
+  - Amazon EFS cho shared file storage
+  - Amazon FSx cho managed file system
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- Hiểu mục đích của AWS Application Migration Service (AWS MGN) trong việc di chuyển máy chủ và workload từ môi trường on-premises hoặc môi trường khác lên AWS.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+- Nắm được một số khái niệm cơ bản liên quan đến migration:
+  - Source server
+  - Replication
+  - Test launch
+  - Cutover
+  - Migration lifecycle
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+- Hiểu cách EC2 Auto Scaling giúp ứng dụng duy trì tính sẵn sàng và tự động điều chỉnh tài nguyên theo nhu cầu sử dụng.
+
+- Nhận thức được mối liên hệ giữa scalability, availability và cost optimization khi thiết kế hệ thống Cloud.
+
+- Hoàn thành ghi chú và tổng hợp kiến thức về compute, storage, migration và scaling để chuẩn bị cho các bài thực hành ở những tuần tiếp theo.
+
 
 

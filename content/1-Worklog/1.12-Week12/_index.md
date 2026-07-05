@@ -5,53 +5,31 @@ weight: 2
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
-
 ### Week 12 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Perform End-to-End integration linking assigned personal subsystems including Authentication workflows (Cognito), Personal Profile management with avatar upload (Profile/S3), and Ticket Registration (Lambda/DynamoDB).
+- Conduct full-system Integration Testing to detect and resolve emerging errors.
+- Perform review and optimization of operational costs for configured Serverless resources (AWS Budgets, DynamoDB Capacity, Lambda Timeout).
+- Finalize technical documentation (Workshop Report), package infrastructure source codes, and prepare for project handoff.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to be deployed this week:
 
+| Day | Task | Start Date | Completion Date | Document Source |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | --------------------------------------- |
+| Mon | - Execute End-to-End synchronization configuration: Append JWT tokens acquired after Login into request Headers <br> - Run full integration scenarios: Log in -> Fetch Presigned URL -> Upload photos to S3 -> Update Profile -> Send ticket registration API | 06/07/2026   | 06/07/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Tue | - Write scripts and perform system integration testing across diverse data variants to verify the stability of API Gateway Authorizers, waiting list processing Lambdas, and personal profile subsystems | 07/07/2026   | 07/07/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Wed | - Review cloud resource configurations to optimize costs: Convert DynamoDB to On-demand mode, adjust allocated memory sizes for Lambdas, and configure appropriate log retention times on CloudWatch | 08/07/2026   | 08/07/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Thu | - Consolidate and finalize the detailed final-term technical document (Workshop Report) covering authentication architectures, S3 personal profile modules, and event ticket registration modules <br> - Package SAM Template infrastructure code to the team repository | 09/07/2026   | 09/07/2026      | https://cloudjourney.awsstudygroup.com/ |
+| Fri | - Conduct an overall review of all resources on the AWS account <br> - Hand over source codes and project documentation to the internship mentor at the enterprise, officially concluding the internship period | 10/07/2026   | 10/07/2026      | https://cloudjourney.awsstudygroup.com/ |
 
-### Week 12 Achievements:
+### Week 12 Results Achieved:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Successfully integrated complete business workflows (End-to-End): Users log in via Email/Google, receive secure JWT Tokens to update profile details, upload avatar files to S3, and register for event tickets securely.
 
-* Successfully created and configured an AWS Free Tier account.
+- Completed the full-system integration testing process, thoroughly resolving access permission errors at the API Gateway Authorizer, ensuring profile updates and operational logistics run smoothly.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+- Successfully optimized Serverless application performance leveraging the .NET 8 environment and managed cloud operational costs based on AWS best practices.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+- Completed full technical handoff documentation (Workshop Report) and packaged Infrastructure as Code (IaC) architectures cleanly and systematically.
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Fulfilled all initial objectives set for the internship program, successfully completing assigned component development tasks within the project and executing product handoff right on schedule.
