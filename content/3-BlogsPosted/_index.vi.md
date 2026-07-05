@@ -9,8 +9,8 @@ pre: " <b> 3. </b> "
 <!-- {{% notice warning %}}  
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}} -->
-
-Tại đây sẽ là phần liệt kê, giới thiệu các blogs mà các bạn đã đăng trên [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). Ví dụ:
+<!-- 
+Tại đây sẽ là phần liệt kê, giới thiệu các blogs mà các bạn đã đăng trên [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). Ví dụ: -->
 
 ###  [Blog 1 - Xây dựng Kiến trúc SaaS Đa thuê bao dạng Lai cho các Dịch vụ Lưu trạng thái trên AWS](3.1-Blog1/)
 Bài viết này giới thiệu giải pháp Kiến trúc Lai (Hybrid) trên AWS, kết hợp giữa mô hình Cô lập (Silo) và Chia sẻ (Pool) cho các dịch vụ lưu trạng thái (Stateful Services như Server Game, Chat thời gian thực). Hệ thống tối ưu hóa chi phí nhờ mô hình Pool cho khách hàng nhỏ và đảm bảo hiệu năng cho khách hàng VIP/Enterprise bằng phân vùng Silo độc lập, sử dụng DynamoDB làm "Routing Table" động cùng cụm Amazon EKS và ElastiCache (Redis) để đồng bộ trạng thái phiên (Session State) theo thời gian thực.
