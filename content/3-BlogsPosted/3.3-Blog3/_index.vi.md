@@ -22,7 +22,7 @@ Các điểm chính cần nắm:
 * **Reserved Concurrency:** Tính năng dành riêng một hạn mức tài nguyên cố định cho một hàm Lambda cụ thể, đảm bảo nó luôn có tài nguyên chạy và không bị các Lambda khác trong cùng tài khoản chiếm dụng hết Concurrency.
 * **Provisioned Concurrency:** Giữ sẵn một số lượng môi trường thực thi luôn ở trạng thái khởi tạo hoàn chỉnh (Pre-warmed), giúp triệt tiêu hoàn toàn hiện tượng Cold Start cho các API yêu cầu độ trễ cực thấp nhưng sẽ phát sinh thêm chi phí duy trì.
 
-![Sơ đồ tổng quan cơ chế Concurrent Execution của AWS Lambda](/images/3.3-Blog3/Picture.png)
+![Sơ đồ tổng quan cơ chế Concurrent Execution của AWS Lambda](/fcj-workshop-template/images/3.3-Blog3/Picture.png)
 <p style="text-align: center;"><i>Hình 3.1: Sơ đồ tổng quan cơ chế Concurrent Execution của AWS Lambda.</i></p>
 
 ### LINK THAM KHẢO DỊCH VỤ CỐT LÕI (AWS OFFICIAL DOCUMENTATION)
@@ -31,7 +31,7 @@ Các điểm chính cần nắm:
 
 ### HƯỚNG DẪN TRIỂN KHAI VÀ PHÂN TÍCH CHI TIẾT
 
-![Sơ đồ chi tiết thuật toán phân nhánh Cold Start và Warm Start của AWS Lambda](/images/3.3-Blog3/PictureDetails.png)
+![Sơ đồ chi tiết thuật toán phân nhánh Cold Start và Warm Start của AWS Lambda](/fcj-workshop-template/images/3.3-Blog3/PictureDetails.png)
 <p style="text-align: center;"><i>Hình 3.2: Sơ đồ chi tiết thuật toán kiểm tra môi trường và phân nhánh Cold Start / Warm Start.</i></p>
 
 Dựa trên các sơ đồ minh họa quy trình vận hành, luồng xử lý đồng thời và tối ưu tài nguyên của AWS Lambda được phân tích cụ thể như sau:

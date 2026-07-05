@@ -33,7 +33,7 @@ Dự án được deploy tại AWS Region:
 ```text
 ap-southeast-1
 ```
-!["AWS Singapore Region](/images/5-Workshop/5.2-Prerequisite/Region.jpg)
+!["AWS Singapore Region](/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/Region.jpg)
 ---
 
 ## Công cụ cần cài đặt
@@ -209,7 +209,7 @@ Các thư viện chính đáng chú ý trong package.json:
 | recharts | Vẽ biểu đồ cho trang Dashboard/Analytics |
 | react-router-dom | Điều hướng giữa các trang User/Admin/Public |
 
-<!-- !["Lệnh khởi tạo FE](/images/5-Workshop/5.2-Prerequisite/npminstall.jpg) -->
+<!-- !["Lệnh khởi tạo FE](/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/npminstall.jpg) -->
 ---
 
 ## Lưu ý quan trọng

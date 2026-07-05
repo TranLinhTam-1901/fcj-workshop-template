@@ -22,7 +22,7 @@ Key points to grasp:
 * **Reserved Concurrency:** A feature that dedicates a maximum number of concurrent allocations to a specific Lambda function. This guarantees that the function always has scaling capacity while preventing it from exhausting the unreserved concurrency pool of the entire AWS account.
 * **Provisioned Concurrency:** Pre-warms and initializes a specific number of execution environments ahead of time. This completely eliminates Cold Starts for low-latency APIs requiring near-zero latency but incurs additional baseline uptime maintenance costs.
 
-![AWS Lambda Concurrent Execution Mechanism Overview](/images/3.3-Blog3/Picture.png)
+![AWS Lambda Concurrent Execution Mechanism Overview](/fcj-workshop-template/images/3.3-Blog3/Picture.png)
 <p style="text-align: center;"><i>Figure 3.1: AWS Lambda Concurrent Execution Mechanism Overview.</i></p>
 
 ### CORE SERVICES REFERENCE LINKS (AWS OFFICIAL DOCUMENTATION)
@@ -31,7 +31,7 @@ Key points to grasp:
 
 ### IMPLEMENTATION GUIDE AND DETAILED ANALYSIS
 
-![Detailed Workflow of AWS Lambda Cold Start and Warm Start Branching](/images/3.3-Blog3/PictureDetails.png)
+![Detailed Workflow of AWS Lambda Cold Start and Warm Start Branching](/fcj-workshop-template/images/3.3-Blog3/PictureDetails.png)
 <p style="text-align: center;"><i>Figure 3.2: Detailed Workflow of AWS Lambda Environment Check and Cold Start / Warm Start Branching.</i></p>
 
 Based on the operational architecture workflows, the concurrent request processing and resource optimization of AWS Lambda can be analyzed as follows:

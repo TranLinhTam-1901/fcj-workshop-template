@@ -79,7 +79,7 @@ Expected response:
 
 The success, message, checkInMethod, and status fields are always fixed as shown above for every test account. The remaining fields (ticketId, eventId, eventTitle, userId, userEmail, userFullName, checkInAt) will differ depending on the ticket and account being tested — when capturing real screenshots, these are the exact values that need to match the ticket created in section 5.7.
 
-![Checkin](/images/5-Workshop/5.8-Checkin-certificate-flow/Checkin.jpg)
+![Checkin](/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/Checkin.jpg)
 
 ---
 
@@ -141,7 +141,7 @@ Expected response:
 }
 ```
 
-![certificates](/images/5-Workshop/5.8-Checkin-certificate-flow/certificates.jpg)
+![certificates](/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/certificates.jpg)
 
 ---
 
@@ -163,9 +163,9 @@ Open Amazon S3 → Buckets → the project's certificates bucket, and check that
 
 Open CloudWatch → Log groups → the log group for AttendanceCertificateFunction, find the log stream from the test time, and check for log lines recording the outgoing email and a successful SES call status.
 
-![S3](/images/5-Workshop/5.8-Checkin-certificate-flow/S3bucketcertificates.jpg)
-![ClouldWatch](/images/5-Workshop/5.8-Checkin-certificate-flow/CloudWatch.jpg)
-![Mail](/images/5-Workshop/5.8-Checkin-certificate-flow/Mail.jpg)
+![S3](/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/S3bucketcertificates.jpg)
+![ClouldWatch](/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/CloudWatch.jpg)
+![Mail](/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/Mail.jpg)
 
 ---
 

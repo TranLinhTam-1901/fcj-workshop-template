@@ -24,7 +24,7 @@ Các điểm chính cần nắm:
 
 Cơ chế dùng DynamoDB làm "Routing Table" động giúp nâng cấp khách hàng từ gói thường lên gói VIP chỉ bằng cách thay đổi cấu hình dữ liệu, không cần sửa code hay sửa hạ tầng. Hãy thiết kế lớp Định tuyến (Routing Layer) thật lỏng lẻo (decoupled) ngay từ đầu để thoải mái tùy biến hạ tầng bên dưới mà không làm ảnh hưởng tới khách hàng.
 
-![Sơ đồ kiến trúc Hybrid Multi-Tenant cho Stateful Services](/images/3.1-Blog1/Picture1.png)
+![Sơ đồ kiến trúc Hybrid Multi-Tenant cho Stateful Services](/fcj-workshop-template/images/3.1-Blog1/Picture1.png)
 
 ### LINK THAM KHẢO
 * [AWS Architecture Blog - Building a Hybrid Multi-Tenant Architecture for Stateful Services on AWS](https://aws.amazon.com/blogs/architecture/building-hybrid-multi-tenant-architecture-for-stateful-services-on-aws/)

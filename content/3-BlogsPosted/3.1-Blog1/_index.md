@@ -24,7 +24,7 @@ Key points to grasp:
 
 The mechanism of using DynamoDB as a dynamic "Routing Table" allows upgrading customers from a standard tier to a VIP tier simply by changing the data configuration, without needing to modify code or infrastructure. Design your Routing Layer to be loosely coupled from the very beginning to freely customize the underlying infrastructure without impacting customers.
 
-![Hybrid Multi-Tenant Architecture for Stateful Services](/images/3.1-Blog1/Picture1.png)
+![Hybrid Multi-Tenant Architecture for Stateful Services](/fcj-workshop-template/images/3.1-Blog1/Picture1.png)
 
 ### REFERENCE LINKS
 * [AWS Architecture Blog - Building a Hybrid Multi-Tenant Architecture for Stateful Services on AWS](https://aws.amazon.com/blogs/architecture/building-hybrid-multi-tenant-architecture-for-stateful-services-on-aws/)
