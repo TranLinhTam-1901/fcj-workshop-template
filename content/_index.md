@@ -15,7 +15,7 @@ chapter: false
 ### Student Information:
 &emsp; **Full Name:** Tran Linh Tam
 
-&emsp; **Phone Number:** 03373588673
+&emsp; **Phone Number:** 0373588673
 
 &emsp; **Email:** tranlinhtamtlt@gmail.com
 
